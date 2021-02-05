@@ -5,11 +5,12 @@
     2. Произведение не четных чисел числового ряда.
     * обработать возможные ошибки
 """
-try:
-    start = int(input('Начало: '))
-    end = int(input('Конец: '))
-except ValueError:
-    exit('Не цифра!')
+start = input('Начало: ')
+if start != '':
+    start = int(start)
+else:
+    start = 0
+end = int(input('Конец: '))
 sum = 0
 proizv = 1
 # prov = 0
